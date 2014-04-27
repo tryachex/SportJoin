@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1889EF18190D42B200912B09 /* CSStickyHeaderFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1889EF13190D42B200912B09 /* CSStickyHeaderFlowLayout.m */; };
+		1889EF19190D42B200912B09 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 1889EF15190D42B200912B09 /* .gitkeep */; };
+		1889EF1A190D42B200912B09 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 1889EF17190D42B200912B09 /* .gitkeep */; };
+		18D63CB3190D454000D65D8D /* STKUserCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D63CB2190D454000D65D8D /* STKUserCollectionViewController.m */; };
+		18D63CB5190D463A00D65D8D /* STKUserHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D63CB4190D463A00D65D8D /* STKUserHeaderView.xib */; };
 		18F01DF5190D2EA000B69823 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F01DF4190D2EA000B69823 /* Foundation.framework */; };
 		18F01DF7190D2EA000B69823 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F01DF6190D2EA000B69823 /* CoreGraphics.framework */; };
 		18F01DF9190D2EA000B69823 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F01DF8190D2EA000B69823 /* UIKit.framework */; };
@@ -34,6 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1889EF12190D42B200912B09 /* CSStickyHeaderFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSStickyHeaderFlowLayout.h; sourceTree = "<group>"; };
+		1889EF13190D42B200912B09 /* CSStickyHeaderFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSStickyHeaderFlowLayout.m; sourceTree = "<group>"; };
+		1889EF15190D42B200912B09 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		1889EF17190D42B200912B09 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		18D63CB1190D454000D65D8D /* STKUserCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STKUserCollectionViewController.h; sourceTree = "<group>"; };
+		18D63CB2190D454000D65D8D /* STKUserCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STKUserCollectionViewController.m; sourceTree = "<group>"; };
+		18D63CB4190D463A00D65D8D /* STKUserHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STKUserHeaderView.xib; sourceTree = "<group>"; };
 		18F01DF1190D2EA000B69823 /* SportJoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportJoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18F01DF4190D2EA000B69823 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		18F01DF6190D2EA000B69823 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -79,6 +91,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1889EF11190D42B200912B09 /* HeaderViewClasses */ = {
+			isa = PBXGroup;
+			children = (
+				1889EF12190D42B200912B09 /* CSStickyHeaderFlowLayout.h */,
+				1889EF13190D42B200912B09 /* CSStickyHeaderFlowLayout.m */,
+				1889EF14190D42B200912B09 /* ios */,
+				1889EF16190D42B200912B09 /* osx */,
+			);
+			name = HeaderViewClasses;
+			path = ../HeaderViewClasses;
+			sourceTree = "<group>";
+		};
+		1889EF14190D42B200912B09 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				1889EF15190D42B200912B09 /* .gitkeep */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		1889EF16190D42B200912B09 /* osx */ = {
+			isa = PBXGroup;
+			children = (
+				1889EF17190D42B200912B09 /* .gitkeep */,
+			);
+			path = osx;
+			sourceTree = "<group>";
+		};
+		18D63CB0190D439800D65D8D /* User View */ = {
+			isa = PBXGroup;
+			children = (
+				18D63CB1190D454000D65D8D /* STKUserCollectionViewController.h */,
+				18D63CB2190D454000D65D8D /* STKUserCollectionViewController.m */,
+				18D63CB4190D463A00D65D8D /* STKUserHeaderView.xib */,
+			);
+			name = "User View";
+			path = ..;
+			sourceTree = "<group>";
+		};
 		18F01DE8190D2E9F00B69823 = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +169,8 @@
 				18F01E09190D2EA000B69823 /* STKViewController.h */,
 				18F01E0A190D2EA000B69823 /* STKViewController.m */,
 				18F01E0C190D2EA000B69823 /* Images.xcassets */,
+				18D63CB0190D439800D65D8D /* User View */,
+				1889EF11190D42B200912B09 /* HeaderViewClasses */,
 				18F01DFB190D2EA000B69823 /* Supporting Files */,
 			);
 			path = SportJoin;
@@ -229,9 +282,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18D63CB5190D463A00D65D8D /* STKUserHeaderView.xib in Resources */,
 				18F01E0D190D2EA000B69823 /* Images.xcassets in Resources */,
 				18F01DFF190D2EA000B69823 /* InfoPlist.strings in Resources */,
+				1889EF1A190D42B200912B09 /* .gitkeep in Resources */,
 				18F01E08190D2EA000B69823 /* Main.storyboard in Resources */,
+				1889EF19190D42B200912B09 /* .gitkeep in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,7 +306,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18D63CB3190D454000D65D8D /* STKUserCollectionViewController.m in Sources */,
 				18F01E01190D2EA000B69823 /* main.m in Sources */,
+				1889EF18190D42B200912B09 /* CSStickyHeaderFlowLayout.m in Sources */,
 				18F01E05190D2EA000B69823 /* STKAppDelegate.m in Sources */,
 				18F01E0B190D2EA000B69823 /* STKViewController.m in Sources */,
 			);
@@ -457,6 +515,7 @@
 				18F01E25190D2EA000B69823 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18F01E26190D2EA000B69823 /* Build configuration list for PBXNativeTarget "SportJoinTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +524,7 @@
 				18F01E28190D2EA000B69823 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,10 +8,12 @@
 
 #import "STKUserCollectionViewController.h"
 #import "HeaderViewClasses/CSStickyHeaderFlowLayout.h"
+#import "STKCell.h"
 
-@interface STKUserCollectionViewController ()
+@interface STKUserCollectionViewController () <UICollectionViewDelegateFlowLayout>
 
-//@property (nonatomic, strong) NSArray *sections;
+@property (nonatomic, strong) NSArray *rows;
+@property (nonatomic, strong) NSArray *sections;
 @property (nonatomic, strong) UINib *headerNib;
 
 @end
@@ -21,25 +23,15 @@
 - (id)initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
     if (self) {
-//        self.sections = @[
-//                          @{@"Twitter":@"http://twitter.com"},
-//                          @{@"Facebook":@"http://facebook.com"},
-//                          @{@"Tumblr":@"http://tumblr.com"},
-//                          @{@"Pinterest":@"http://pinterest.com"},
-//                          @{@"Instagram":@"http://instagram.com"},
-//                          @{@"Github":@"http://github.com"},
-//                          ];
-
+        self.sections = @[
+                          @{@"Twitter":@"http://twitter.com"},
+                          @{@"Facebook":@"http://facebook.com"},
+                          @{@"Tumblr":@"http://tumblr.com"},
+                          @{@"Pinterest":@"http://pinterest.com"},
+                          @{@"Instagram":@"http://instagram.com"},
+                          @{@"Github":@"http://github.com"},
+                          ];
         self.headerNib = [UINib nibWithNibName:@"STKUserHeaderView" bundle:nil];
-    }
-    return self;
-}
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
     }
     return self;
 }
@@ -63,24 +55,57 @@
     [self.collectionView registerNib:self.headerNib
           forSupplementaryViewOfKind:CSStickyHeaderParallaxHeader
                  withReuseIdentifier:@"header"];
-    
+    self.rows = @[@"1",@"1",@"1",@"1",@"1",@"1",@"1",@"1",@"2"];
+
 }
 
-- (void)didReceiveMemoryWarning
+#pragma mark -
+#pragma mark UICollectionViewController Data Source Method
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
+    return [self.sections count];
+}
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return 1;
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    NSDictionary *obj = self.sections[indexPath.section];
+
+    STKCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell"
+                                                             forIndexPath:indexPath];
+
+    cell.eventLabel.text = [[obj allValues] firstObject];
+    return cell;
 }
 
-/*
-#pragma mark - Navigation
+- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
+    if ([kind isEqualToString:UICollectionElementKindSectionHeader]) {
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+        // This part is useless
+        NSDictionary *obj = self.sections[indexPath.section];
+
+        STKCell *cell = [collectionView dequeueReusableSupplementaryViewOfKind:kind
+                                                          withReuseIdentifier:@"sectionHeader"
+                                                                 forIndexPath:indexPath];
+
+        cell.eventLabel.text = [[obj allKeys] firstObject];
+
+        return cell;
+    } else if ([kind isEqualToString:CSStickyHeaderParallaxHeader]) {
+        UICollectionReusableView *cell = [collectionView dequeueReusableSupplementaryViewOfKind:kind
+                                                                            withReuseIdentifier:@"header"
+                                                                                   forIndexPath:indexPath];
+
+        return cell;
+    }
+    return nil;
+}
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    return CGSizeMake(320, 90);
 }
-*/
 
 @end

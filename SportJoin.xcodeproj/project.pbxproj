@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18F01DF5190D2EA000B69823 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F01DF4190D2EA000B69823 /* Foundation.framework */; };
+		18F01DF7190D2EA000B69823 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F01DF6190D2EA000B69823 /* CoreGraphics.framework */; };
+		18F01DF9190D2EA000B69823 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F01DF8190D2EA000B69823 /* UIKit.framework */; };
+		18F01DFF190D2EA000B69823 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18F01DFD190D2EA000B69823 /* InfoPlist.strings */; };
+		18F01E01190D2EA000B69823 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F01E00190D2EA000B69823 /* main.m */; };
+		18F01E05190D2EA000B69823 /* STKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F01E04190D2EA000B69823 /* STKAppDelegate.m */; };
+		18F01E08190D2EA000B69823 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F01E06190D2EA000B69823 /* Main.storyboard */; };
+		18F01E0B190D2EA000B69823 /* STKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F01E0A190D2EA000B69823 /* STKViewController.m */; };
+		18F01E0D190D2EA000B69823 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18F01E0C190D2EA000B69823 /* Images.xcassets */; };
+		18F01E14190D2EA000B69823 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F01E13190D2EA000B69823 /* XCTest.framework */; };
+		18F01E15190D2EA000B69823 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F01DF4190D2EA000B69823 /* Foundation.framework */; };
+		18F01E16190D2EA000B69823 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F01DF8190D2EA000B69823 /* UIKit.framework */; };
+		18F01E1E190D2EA000B69823 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18F01E1C190D2EA000B69823 /* InfoPlist.strings */; };
+		18F01E20190D2EA000B69823 /* SportJoinTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F01E1F190D2EA000B69823 /* SportJoinTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18F01E17190D2EA000B69823 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18F01DE9190D2E9F00B69823 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18F01DF0190D2E9F00B69823;
+			remoteInfo = SportJoin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18F01DF1190D2EA000B69823 /* SportJoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportJoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18F01DF4190D2EA000B69823 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		18F01DF6190D2EA000B69823 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		18F01DF8190D2EA000B69823 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		18F01DFC190D2EA000B69823 /* SportJoin-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SportJoin-Info.plist"; sourceTree = "<group>"; };
+		18F01DFE190D2EA000B69823 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		18F01E00190D2EA000B69823 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18F01E02190D2EA000B69823 /* SportJoin-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SportJoin-Prefix.pch"; sourceTree = "<group>"; };
+		18F01E03190D2EA000B69823 /* STKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STKAppDelegate.h; sourceTree = "<group>"; };
+		18F01E04190D2EA000B69823 /* STKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STKAppDelegate.m; sourceTree = "<group>"; };
+		18F01E07190D2EA000B69823 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18F01E09190D2EA000B69823 /* STKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STKViewController.h; sourceTree = "<group>"; };
+		18F01E0A190D2EA000B69823 /* STKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STKViewController.m; sourceTree = "<group>"; };
+		18F01E0C190D2EA000B69823 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		18F01E12190D2EA000B69823 /* SportJoinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SportJoinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18F01E13190D2EA000B69823 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		18F01E1B190D2EA000B69823 /* SportJoinTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SportJoinTests-Info.plist"; sourceTree = "<group>"; };
+		18F01E1D190D2EA000B69823 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		18F01E1F190D2EA000B69823 /* SportJoinTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SportJoinTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18F01DEE190D2E9F00B69823 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18F01DF7190D2EA000B69823 /* CoreGraphics.framework in Frameworks */,
+				18F01DF9190D2EA000B69823 /* UIKit.framework in Frameworks */,
+				18F01DF5190D2EA000B69823 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18F01E0F190D2EA000B69823 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18F01E14190D2EA000B69823 /* XCTest.framework in Frameworks */,
+				18F01E16190D2EA000B69823 /* UIKit.framework in Frameworks */,
+				18F01E15190D2EA000B69823 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18F01DE8190D2E9F00B69823 = {
+			isa = PBXGroup;
+			children = (
+				18F01DFA190D2EA000B69823 /* SportJoin */,
+				18F01E19190D2EA000B69823 /* SportJoinTests */,
+				18F01DF3190D2EA000B69823 /* Frameworks */,
+				18F01DF2190D2EA000B69823 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18F01DF2190D2EA000B69823 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18F01DF1190D2EA000B69823 /* SportJoin.app */,
+				18F01E12190D2EA000B69823 /* SportJoinTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18F01DF3190D2EA000B69823 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18F01DF4190D2EA000B69823 /* Foundation.framework */,
+				18F01DF6190D2EA000B69823 /* CoreGraphics.framework */,
+				18F01DF8190D2EA000B69823 /* UIKit.framework */,
+				18F01E13190D2EA000B69823 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		18F01DFA190D2EA000B69823 /* SportJoin */ = {
+			isa = PBXGroup;
+			children = (
+				18F01E03190D2EA000B69823 /* STKAppDelegate.h */,
+				18F01E04190D2EA000B69823 /* STKAppDelegate.m */,
+				18F01E06190D2EA000B69823 /* Main.storyboard */,
+				18F01E09190D2EA000B69823 /* STKViewController.h */,
+				18F01E0A190D2EA000B69823 /* STKViewController.m */,
+				18F01E0C190D2EA000B69823 /* Images.xcassets */,
+				18F01DFB190D2EA000B69823 /* Supporting Files */,
+			);
+			path = SportJoin;
+			sourceTree = "<group>";
+		};
+		18F01DFB190D2EA000B69823 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18F01DFC190D2EA000B69823 /* SportJoin-Info.plist */,
+				18F01DFD190D2EA000B69823 /* InfoPlist.strings */,
+				18F01E00190D2EA000B69823 /* main.m */,
+				18F01E02190D2EA000B69823 /* SportJoin-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18F01E19190D2EA000B69823 /* SportJoinTests */ = {
+			isa = PBXGroup;
+			children = (
+				18F01E1F190D2EA000B69823 /* SportJoinTests.m */,
+				18F01E1A190D2EA000B69823 /* Supporting Files */,
+			);
+			path = SportJoinTests;
+			sourceTree = "<group>";
+		};
+		18F01E1A190D2EA000B69823 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18F01E1B190D2EA000B69823 /* SportJoinTests-Info.plist */,
+				18F01E1C190D2EA000B69823 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18F01DF0190D2E9F00B69823 /* SportJoin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18F01E23190D2EA000B69823 /* Build configuration list for PBXNativeTarget "SportJoin" */;
+			buildPhases = (
+				18F01DED190D2E9F00B69823 /* Sources */,
+				18F01DEE190D2E9F00B69823 /* Frameworks */,
+				18F01DEF190D2E9F00B69823 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SportJoin;
+			productName = SportJoin;
+			productReference = 18F01DF1190D2EA000B69823 /* SportJoin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18F01E11190D2EA000B69823 /* SportJoinTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18F01E26190D2EA000B69823 /* Build configuration list for PBXNativeTarget "SportJoinTests" */;
+			buildPhases = (
+				18F01E0E190D2EA000B69823 /* Sources */,
+				18F01E0F190D2EA000B69823 /* Frameworks */,
+				18F01E10190D2EA000B69823 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18F01E18190D2EA000B69823 /* PBXTargetDependency */,
+			);
+			name = SportJoinTests;
+			productName = SportJoinTests;
+			productReference = 18F01E12190D2EA000B69823 /* SportJoinTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18F01DE9190D2E9F00B69823 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = STK;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = apple;
+				TargetAttributes = {
+					18F01E11190D2EA000B69823 = {
+						TestTargetID = 18F01DF0190D2E9F00B69823;
+					};
+				};
+			};
+			buildConfigurationList = 18F01DEC190D2E9F00B69823 /* Build configuration list for PBXProject "SportJoin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18F01DE8190D2E9F00B69823;
+			productRefGroup = 18F01DF2190D2EA000B69823 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18F01DF0190D2E9F00B69823 /* SportJoin */,
+				18F01E11190D2EA000B69823 /* SportJoinTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18F01DEF190D2E9F00B69823 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18F01E0D190D2EA000B69823 /* Images.xcassets in Resources */,
+				18F01DFF190D2EA000B69823 /* InfoPlist.strings in Resources */,
+				18F01E08190D2EA000B69823 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18F01E10190D2EA000B69823 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18F01E1E190D2EA000B69823 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18F01DED190D2E9F00B69823 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18F01E01190D2EA000B69823 /* main.m in Sources */,
+				18F01E05190D2EA000B69823 /* STKAppDelegate.m in Sources */,
+				18F01E0B190D2EA000B69823 /* STKViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18F01E0E190D2EA000B69823 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18F01E20190D2EA000B69823 /* SportJoinTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18F01E18190D2EA000B69823 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18F01DF0190D2E9F00B69823 /* SportJoin */;
+			targetProxy = 18F01E17190D2EA000B69823 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18F01DFD190D2EA000B69823 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18F01DFE190D2EA000B69823 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		18F01E06190D2EA000B69823 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18F01E07190D2EA000B69823 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18F01E1C190D2EA000B69823 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18F01E1D190D2EA000B69823 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18F01E21190D2EA000B69823 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		18F01E22190D2EA000B69823 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18F01E24190D2EA000B69823 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SportJoin/SportJoin-Prefix.pch";
+				INFOPLIST_FILE = "SportJoin/SportJoin-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		18F01E25190D2EA000B69823 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SportJoin/SportJoin-Prefix.pch";
+				INFOPLIST_FILE = "SportJoin/SportJoin-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		18F01E27190D2EA000B69823 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SportJoin.app/SportJoin";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SportJoin/SportJoin-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SportJoinTests/SportJoinTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		18F01E28190D2EA000B69823 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SportJoin.app/SportJoin";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SportJoin/SportJoin-Prefix.pch";
+				INFOPLIST_FILE = "SportJoinTests/SportJoinTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18F01DEC190D2E9F00B69823 /* Build configuration list for PBXProject "SportJoin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18F01E21190D2EA000B69823 /* Debug */,
+				18F01E22190D2EA000B69823 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18F01E23190D2EA000B69823 /* Build configuration list for PBXNativeTarget "SportJoin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18F01E24190D2EA000B69823 /* Debug */,
+				18F01E25190D2EA000B69823 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		18F01E26190D2EA000B69823 /* Build configuration list for PBXNativeTarget "SportJoinTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18F01E27190D2EA000B69823 /* Debug */,
+				18F01E28190D2EA000B69823 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18F01DE9190D2E9F00B69823 /* Project object */;
+}

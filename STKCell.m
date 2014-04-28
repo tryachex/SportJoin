@@ -8,13 +8,20 @@
 
 #import "STKCell.h"
 
+@interface STKCell ()
+
+//@property (strong, nonatomic)
+
+@end
+
 @implementation STKCell
 
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
-        // Initialization code
+        self = (STKCell *)[[UICollectionViewCell alloc] initWithFrame:CGRectMake(0, 0, 320, 90)];
+  //      self.
     }
     return self;
 }

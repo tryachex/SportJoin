@@ -62,21 +62,20 @@
 #pragma mark -
 #pragma mark UICollectionViewController Data Source Method
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return [self.sections count];
+    return 1;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 1;
+    return [self.rows count];
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSDictionary *obj = self.sections[indexPath.section];
 
     STKCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell"
                                                              forIndexPath:indexPath];
 
-    cell.eventLabel.text = [[obj allValues] firstObject];
+    cell.eventLabel.text = self.rows[indexPath.row];
     return cell;
 }
 
@@ -84,13 +83,13 @@
     if ([kind isEqualToString:UICollectionElementKindSectionHeader]) {
 
         // This part is useless
-        NSDictionary *obj = self.sections[indexPath.section];
+
 
         STKCell *cell = [collectionView dequeueReusableSupplementaryViewOfKind:kind
                                                           withReuseIdentifier:@"sectionHeader"
                                                                  forIndexPath:indexPath];
 
-        cell.eventLabel.text = [[obj allKeys] firstObject];
+        cell.eventLabel.text = @"";
 
         return cell;
     } else if ([kind isEqualToString:CSStickyHeaderParallaxHeader]) {

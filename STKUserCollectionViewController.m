@@ -45,16 +45,16 @@
     if ([layout isKindOfClass:[CSStickyHeaderFlowLayout class]]) {
         layout.parallaxHeaderReferenceSize = CGSizeMake(320, 200);
     }
-
     // If we want to disable the sticky header effect
     layout.disableStickyHeaders = YES;
-
     // Also insets the scroll indicator so it appears below the search bar
     self.collectionView.scrollIndicatorInsets = UIEdgeInsetsMake(44, 0, 0, 0);
-
     [self.collectionView registerNib:self.headerNib
           forSupplementaryViewOfKind:CSStickyHeaderParallaxHeader
                  withReuseIdentifier:@"header"];
+
+
+    self.title = @"Sport Join";
     self.rows = @[@"1",@"1",@"1",@"1",@"1",@"1",@"1",@"1",@"2"];
 
 }

@@ -24,7 +24,7 @@
             </objects>
             <point key="canvasLocation" x="-565" y="-45"/>
         </scene>
-        <!--User Collection View Controller - Sport Join-->
+        <!--User Collection View Controller-->
         <scene sceneID="TLG-2e-TTG">
             <objects>
                 <collectionViewController autoresizesArchivedViewToFullSize="NO" id="GGR-np-Iyb" customClass="STKUserCollectionViewController" sceneMemberID="viewController">
@@ -83,7 +83,7 @@
                             <outlet property="delegate" destination="GGR-np-Iyb" id="glp-oQ-mFC"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" title="Sport Join" id="QaO-Y9-z1d"/>
+                    <navigationItem key="navigationItem" id="QaO-Y9-z1d"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HQx-K7-CfQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -200,7 +200,7 @@
             </objects>
             <point key="canvasLocation" x="372" y="707"/>
         </scene>
-        <!--Select View Controller - Sport Join-->
+        <!--Select View Controller-->
         <scene sceneID="llw-0g-Ds4">
             <objects>
                 <collectionViewController autoresizesArchivedViewToFullSize="NO" id="dy4-aW-OEx" customClass="STKSelectViewController" sceneMemberID="viewController">
@@ -259,7 +259,7 @@
                             <outlet property="delegate" destination="dy4-aW-OEx" id="Och-ks-RtF"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" title="Sport Join" id="32d-Pj-WVp"/>
+                    <navigationItem key="navigationItem" id="32d-Pj-WVp"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x6T-ue-12M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

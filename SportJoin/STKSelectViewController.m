@@ -27,8 +27,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-//    [self.collectionView registerClass:[STKCell class] forCellWithReuseIdentifier:@"selectCell"];
+    self.title = @"Sport Join";
 }
 
 #pragma mark -
